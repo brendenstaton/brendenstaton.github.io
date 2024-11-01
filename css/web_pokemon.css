@@ -1,0 +1,101 @@
+/* Navigation Thingy */
+
+
+nav ul li {
+    width: 15%;
+    text-align: center;
+    border: thick solid white;
+    border-collapse: collapse;
+    display: inline-block;
+    background-color: red;
+}
+
+
+
+/* Heading */
+
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Body */
+
+body {
+    background: linear-gradient(red, white, black);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150vh;
+    margin: 0;
+}
+
+div.content {
+    width: 95%;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "img1 welcometext img2"
+        "img3 welcometext img4";
+}
+
+
+
+/* Table stuff */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: .1vh solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: white;
+}
+
+tfoot {
+    background-color: white;
+}
+
+.first {
+    background-color: white;
+}
+
+/* Mobile View */
+
+@media (max-aspect-ratio: 1/1) {
+
+    div.content {
+        width: 95%;
+        font-size: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "welcometext welcometext"
+            "img1 img2";
+    }
+
+    div.content img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
